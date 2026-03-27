@@ -1,0 +1,103 @@
+$fontNameReg: "dmsansRegular";
+$fontNameBold: "dmsansBold";
+$fontNameMed: "dmsansMedium";
+$color-name: #AE1332;
+$color-name2: #FFFFFF;
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "dmsansRegular";
+    src: url(../fonts/DMSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "dmsansMedium";
+    src: url(../fonts/DMSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "dmsansBold";
+    src: url(../fonts/DMSans-Bold.ttf);
+}
+
+.container{
+    //width: 100%; 
+    width: 1280px; 
+    height: 5469px;
+    margin: 0 auto;
+    background-color: $color-name;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: $color-name2;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.info {
+    display: flex;
+    margin-left: 32px;
+    flex-shrink: 0;
+    z-index: 2;
+    background-color: $color-name2;
+}
+
+.textInfo {
+    text-decoration: none;
+    color: $color-name;
+    font-family: $fontNameReg;
+    font-size: 14px;
+    margin-right: 21.5px;
+    letter-spacing: -4%;
+
+}
+
+.fullLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scale(0.97);
+    gap: 9px;
+    letter-spacing: -0.1px;
+
+    z-index: 1;
+    max-width: 100%
+}
+
+.textLogo {
+    word-spacing: -1px;
+    font-family: $fontNameBold;
+    color: $color-name;
+    font-size: 14px;
+}
+
+.basketIcon {
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: 36px;
+    flex-shrink: 0;
+
+    a {
+        display: block;
+        
+        .basket-img {
+            display: block;
+        }
+        
+        .burger-img {
+            display: none;
+        }
+    }
+}

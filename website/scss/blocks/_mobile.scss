@@ -1,0 +1,410 @@
+/* ========== МОБИЛЬНАЯ АДАПТАЦИЯ (390px) ========== */
+@media screen and (max-width: 390px) {
+
+    @mixin w-h-100 {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Общие контейнеры */
+    .container {
+        width: 100%;
+        max-width: 390px;
+        height: 7577px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    .main {
+        //position: relative;
+        height: 100%;
+        max-height: 6901px;
+    }
+
+    .header {
+        justify-content: flex-start;
+        /* Прижимаем всё к левому краю */
+        //padding-left: 15px; /* Добавляем отступ слева */
+    }
+
+    /* Скрываем все ссылки в info */
+    .info {
+        display: none;
+        /* Полностью скрываем блок с навигацией */
+    }
+
+    /* Логотип больше не центрируем, а прижимаем к левому краю */
+    .fullLogo {
+        position: static;
+        /* Убираем абсолютное позиционирование */
+        transform: none;
+        /* Убираем трансформацию */
+        left: auto;
+        justify-content: flex-start;
+        gap: 7px;
+        letter-spacing: -3.6%;
+        margin-left: 29px;
+    }
+
+    /* Корзину перемещаем в правый край */
+    .basketIcon {
+        position: absolute;
+        left: 341px;
+        top: 15px;
+        //transform: translateY(-50%);
+        width: 20px;
+        height: 14px;
+
+        a {
+            .basket-img {
+                display: none;
+                /* Скрываем корзину */
+            }
+
+            .burger-img {
+                display: block;
+                /* Показываем бургер */
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .previewText {
+        position: absolute;
+        width: 335px;
+        height: 118px;
+        text-align: center;
+        top: 56px;
+        left: 28px;
+        z-index: 2;
+        line-height: 30.5px;
+        text-transform: uppercase;
+        color: $color-name2;
+        font-family: $fontNameMed;
+        font-size: 28px;
+        letter-spacing: -4%;
+    }
+
+    .imgStrobary {
+        position: absolute;
+        top: 51px;
+        left: 303px;
+        //right: 223;
+        width: 65px;
+        z-index: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    .imgBanana {
+        position: absolute;
+        top: 113px;
+        left: 19px;
+        width: 81px;
+        z-index: 1;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    .imgWomen {
+        position: absolute;
+        top: 116px;
+        left: 40px;
+        width: 311px;
+        z-index: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    .imgRamka {
+        position: absolute;
+        top: 103px;
+        left: 28px;
+        width: 335px;
+        z-index: 1;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    .imgBtn1 {
+        position: absolute;
+        top: 531px;
+        left: 120px;
+        width: 154px;
+        height: 154px;
+        z-index: 1;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+
+    .snoskaText {
+        margin-top: 276px;
+        margin-left: -5px;
+        width: 279px;
+        height: 90px;
+    }
+
+
+    .smallBlock2 {
+        margin-top: 258px;
+        margin-left: 9px;
+    }
+
+    .heshtags1 {
+        position: static; // сбрасываем позиционирование
+        padding-top: 1249px; // auto — значение по умолчанию
+        margin-left: -890px;
+    }
+
+    .heshtags2 {
+        margin-left: -890px;
+        //width: 266px;
+        //height: 30px;
+    }
+
+    .smallBlock1 {
+        margin-top: 1042px;
+        margin-left: -898px;
+    }
+
+    .block-2 {
+        margin-top: 512px;
+        width: 335px;
+        height: 188px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        margin-left: 28px;
+    }
+
+    .previewText2 {
+        width: 335px;
+        height: 84px;
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .previewText2_1 {
+        width: 335px;
+        height: 90px;
+        font-size: 14px;
+        line-height: 18px;
+
+    }
+
+    .stepBlocks {
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 29px;
+        margin-top: 52px;
+        gap: 0;
+
+        & :nth-child(1) {
+            width: 347px;
+            height: 165px;
+        }
+
+        & :nth-child(2) {
+            margin-top: -32px;
+            width: 338px;
+            height: 148px;
+        }
+
+        & :nth-child(3) {
+            margin-top: -24px;
+            margin-left: -12px;
+            width: 363px;
+            height: 148px;
+        }
+
+    }
+
+    .gifBarrys {
+
+        img {
+            width: 335px;
+            height: 476px;
+            margin-top: 22px;
+            margin-left: 28px;
+            border-radius: 20px;
+        }
+    }
+
+    .block-5 {
+        margin-top: 77px;
+        width: 335px;
+        height: 132px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin-left: 28px;
+    }
+
+    .previewText3 {
+        width: 210px;
+        height: 28px;
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .previewText3_1 {
+        width: 334px;
+        height: 90px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .products {
+        //justify-content: center;
+        margin-left: 28px;
+        margin-right: 0;
+        margin-top: 63px;
+        width: 335px;
+        height: 2860px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 465px);
+        gap: 14px;
+
+        a {
+            height: 400px;
+        }
+
+        img {
+            width: 335px;
+            height: 465px;
+        }
+
+        .hide {
+            display: none;
+        }
+    }
+
+    .imgBtn2 {
+        margin-top: 28px;
+        margin-left: 20px;
+        transform: scale(0.7);
+
+    }
+
+    .block-8 {
+        margin-top: 176px;
+    }
+
+    .previewText4 {
+        margin-top: 0;
+        font-size: 32px;
+        line-height: 32px;
+        width: 335px;
+        height: 96px;
+    }
+
+    .imgFruits {
+        width: 335px;
+        height: 476px;
+        justify-content: center;
+
+        .hide {
+            display: none;
+        }
+
+        img {
+            @include w-h-100;
+        }
+    }
+
+    .block-11 {
+        display: none;
+    }
+
+
+    .footer {
+        max-height: 626px;
+        height: 100%;
+        flex-direction: column;
+        justify-content: none;
+        display: block;
+    }
+
+    .block-10 {
+        display: none;
+    }
+
+    .block-12 {
+        margin-left: 20px;
+        margin-top: 77px;
+    }
+
+    .imgWomen2 {
+        margin-left: 1px;
+        transform: scale(0.96);
+
+        .fullLogo2 {
+            transform: scale(1.01);
+        }
+    }
+
+    .block-13 {
+        margin-top: 20px;
+        margin-left: 93px;
+    }
+
+    .block-14 {
+        margin-top: 42px;
+        margin-left: 110px;
+
+        img {
+            transform: scale(0.9);
+        }
+
+        .footerIcons {
+            gap: 60px;
+            margin-left: 4px;
+        }
+
+        .phoneNum {
+            margin-top: 3px;
+            margin-left: -13px;
+            line-height: 18px;
+            font-size: 14px;
+            text-align: center;
+
+        }
+
+        .adress {
+            margin-top: -7px;
+            margin-left: 16px;            
+            width: 140px;
+            height: 54px;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: -2%;
+
+        }
+
+    }
+}
